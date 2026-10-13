@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Moto Care</title>
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #1557b0;
+            --text-main: #202124;
+            --text-secondary: #5f6368;
+            --bg-body: #f8f9fa;
+            --bg-card: #ffffff;
+            --border-color: #dadce0;
+            --accent-tag: #e8f0fe;
+            --accent-tag-text: #1967d2;
+            --callout-bg: #fef7e0;
+            --callout-border: #f9ab00;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+            padding: 40px;
+            border: 1px solid var(--border-color);
+        }
+
+        .header {
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: var(--accent-tag);
+            color: var(--accent-tag-text);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 16px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .meta-info {
+            color: var(--text-secondary);
+            font-size: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 8px;
+        }
+
+        .meta-item strong {
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--text-main);
+            margin-top: 32px;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: var(--text-main);
+            margin-top: 18px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            font-size: 15px;
+            color: #3c4043;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+            color: #3c4043;
+        }
+
+        .highlight-box {
+            background-color: var(--accent-tag);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: #174ea6;
+            font-weight: 500;
+            font-size: 14.5px;
+        }
+
+        .callout-warning {
+            background-color: var(--callout-bg);
+            border-left: 4px solid var(--callout-border);
+            padding: 16px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+
+        .callout-warning p {
+            margin-bottom: 0;
+            color: #7a4f01;
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        table, th, td {
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: #f1f3f4;
+            color: var(--text-main);
+            text-align: left;
+            padding: 10px 14px;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 10px 14px;
+            color: #3c4043;
+            vertical-align: top;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card {
+            background: #f8f9fa;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .copy-button {
+            display: inline-block;
+            background: var(--primary);
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 16px;
+            transition: background 0.2s;
+        }
+
+        .copy-button:hover {
+            background: var(--primary-dark);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .meta-info {
+                flex-direction: column;
+                gap: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="app-badge">Official Google Play Privacy Policy</span>
+        <h1>Privacy Policy for Moto Care</h1>
+        <div class="meta-info">
+            <div class="meta-item"><strong>Application:</strong> Moto Care</div>
+            <div class="meta-item"><strong>Package ID:</strong> com.aistudio.cardiagnosis.vxbqta</div>
+            <div class="meta-item"><strong>Effective Date:</strong> October 13, 2026</div>
+            <div class="meta-item"><strong>Contact:</strong> a.qaiser77@gmail.com</div>
+        </div>
+    </div>
+
+    <div class="highlight-box">
+        <p><strong>Summary:</strong> Moto Care is designed to help vehicle owners diagnose mechanical issues using acoustic analysis and camera-based 360° visual inspection, and discover nearby repair garages. This Privacy Policy details how data is handled in strict compliance with the Google Play Developer Program Policies, Google Data Safety requirements, GDPR, and CCPA.</p>
+    </div>
+
+    <h2>1. Introduction</h2>
+    <p>This Privacy Policy explains how <strong>Moto Care</strong> ("the App", "we", "us", or "our") collects, uses, and protects information when you use our mobile application published on the Google Play Store. By installing or using Moto Care, you agree to the collection and use of information in accordance with this policy.</p>
+
+    <h2>2. Permissions Requested & Purpose of Use</h2>
+    <p>The App requests only the permissions strictly necessary to provide vehicle diagnostic features, location-based garage lookup, and ad delivery. You can grant or revoke these runtime permissions at any time through your Android device settings.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Android Permission</th>
+                <th>Category</th>
+                <th>Why It Is Needed & How It Is Used</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>RECORD_AUDIO</code></td>
+                <td>Microphone / Audio</td>
+                <td>
+                    <strong>Acoustic Vehicle Diagnostics:</strong> Used solely when you actively tap "Listen to Engine" or record an automotive sound. The App computes acoustic frequency spectra (FFT analysis, peak decibels, dominant frequencies) to detect engine knocking, belt squeals, transmission whine, and bearing friction.
+                    <br><br>
+                    <em>Privacy Guarantee:</em> Audio is processed exclusively for mechanical diagnostic purposes. We do <strong>never</strong> record ambient conversations, perform voice identification, or conduct background listening.
+                </td>
+            </tr>
+            <tr>
+                <td><code>CAMERA</code></td>
+                <td>Camera / Visual</td>
+                <td>
+                    <strong>360° Visual Vehicle Inspection:</strong> Used to scan vehicle components (such as tires, brake rotors, belts, pulleys, exhaust smoke, fluid leaks, and underbody) during visual diagnosis sessions.
+                    <br><br>
+                    <em>Privacy Guarantee:</em> The camera stream is used for real-time edge computer vision (Google ML Kit) and optical diagnosis. Photos or frames are processed only upon your explicit action to diagnose automotive faults. We do not scan faces or extract biometric data.
+                </td>
+            </tr>
+            <tr>
+                <td><code>ACCESS_FINE_LOCATION</code><br><code>ACCESS_COARSE_LOCATION</code></td>
+                <td>Location</td>
+                <td>
+                    <strong>Nearby Garage & Radar Map:</strong> Used on-demand to display your vehicle's current position on Google Maps and calculate driving distances to nearby automotive repair workshops, tire centers, and emergency mechanics in your region.
+                    <br><br>
+                    <em>Privacy Guarantee:</em> Location is retrieved only while actively viewing the Garages radar map. Location data is <strong>never</strong> tracked in the background and is never sold to third-party data brokers.
+                </td>
+            </tr>
+            <tr>
+                <td><code>INTERNET</code><br><code>ACCESS_NETWORK_STATE</code></td>
+                <td>Network</td>
+                <td>
+                    Required to fetch map tiles from Google Maps SDK, communicate with Google Gemini AI models for multi-system mechanical diagnostics, and display advertisements through Google Mobile Ads (AdMob).
+                </td>
+            </tr>
+            <tr>
+                <td><code>MODIFY_AUDIO_SETTINGS</code></td>
+                <td>Audio Controls</td>
+                <td>
+                    Required to optimize microphone gain and sampling rates for vehicle acoustic recording without distortion.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Advertising & Monetization (Google AdMob)</h2>
+    <p>This application is supported by advertising to offer vehicle diagnostic capabilities free of charge. We integrate the <strong>Google Mobile Ads SDK (AdMob)</strong> to deliver banner, interstitial, and rewarded advertisements.</p>
+
+    <h3>Data Collected by AdMob</h3>
+    <p>In accordance with Google Play Developer Policies and Privacy Sandbox guidelines, Google AdMob and its advertising partners may collect and process pseudonymous identifiers and device data, including:</p>
+    <ul>
+        <li><strong>Google Advertising ID (GAID):</strong> A user-resettable, unique device identifier used for serving relevant ads and frequency capping.</li>
+        <li><strong>Device Information:</strong> Device model, manufacturer, operating system version, screen size, language settings, and general network carrier.</li>
+        <li><strong>Ad Interaction Data:</strong> Ad views, clicks, impressions, and engagement metrics for fraud detection and performance analytics.</li>
+        <li><strong>Coarse IP Address:</strong> Used to derive non-precise location (such as city or country level) for serving geographically appropriate advertisements.</li>
+    </ul>
+
+    <div class="callout-warning">
+        <p><strong>Opting Out of Personalized Advertising:</strong> You can reset or delete your Advertising ID or opt out of personalized ads at any time directly on your Android device: go to <strong>Settings &rarr; Google &rarr; Ads &rarr; Reset advertising ID</strong> or <strong>Delete advertising ID</strong>.</p>
+    </div>
+
+    <h2>4. Third-Party Service Providers</h2>
+    <p>To provide high-quality diagnostic intelligence, interactive mapping, and advertising, the App incorporates industry-standard SDKs provided by Google. Each third-party service operates under its own privacy policy:</p>
+    <ul>
+        <li>
+            <strong>Google Mobile Ads (AdMob):</strong> Used to deliver in-app advertisements.
+            <br>Privacy Policy: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">https://policies.google.com/technologies/ads</a>
+        </li>
+        <li>
+            <strong>Google Play Services:</strong> Core system infrastructure and authentication.
+            <br>Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>
+        </li>
+        <li>
+            <strong>Google Maps SDK:</strong> Displays interactive maps and calculates distances to automotive workshops.
+            <br>Privacy Policy: <a href="https://cloud.google.com/maps-platform/terms" target="_blank" rel="noopener">https://cloud.google.com/maps-platform/terms</a>
+        </li>
+        <li>
+            <strong>Google Gemini API (Generative Language API):</strong> Provides cloud-assisted automotive mechanical reasoning and repair guidance.
+            <br>Terms & Privacy: <a href="https://ai.google.dev/terms" target="_blank" rel="noopener">https://ai.google.dev/terms</a>
+        </li>
+        <li>
+            <strong>Google ML Kit:</strong> On-device vehicle part classification and computer vision processing.
+            <br>Terms: <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">https://developers.google.com/ml-kit/terms</a>
+        </li>
+    </ul>
+
+    <h2>5. Local Storage & Offline Capability</h2>
+    <p>Moto Care is built with an offline-first architecture. Your vehicle profiles (vehicle make, model, year, nickname) and recorded diagnostic repair histories are stored locally on your device in a secure SQLite Room database. This data remains on your device and is not synchronized to external servers unless you explicitly perform an AI diagnosis request.</p>
+
+    <h2>6. Data Retention and Deletion</h2>
+    <p>We respect your right to control your personal data:</p>
+    <ul>
+        <li><strong>Local Vehicle & Diagnostic History:</strong> You can delete any vehicle profile or diagnostic report at any time from within the App. Uninstalling the App or clearing app storage via Android Settings permanently purges all local data.</li>
+        <li><strong>Acoustic & Visual Samples:</strong> Diagnostic audio waveforms and camera frames are retained temporarily in volatile memory only during the active analysis session and are immediately discarded thereafter.</li>
+        <li><strong>Deletion Requests:</strong> If you have any inquiries regarding data stored or processed, you may email us at <a href="mailto:a.qaiser77@gmail.com">a.qaiser77@gmail.com</a> and we will respond within 30 days.</li>
+    </ul>
+
+    <h2>7. Security Measures</h2>
+    <p>We implement commercial-grade administrative, technical, and physical security measures to safeguard your information. All cloud transmissions (including API requests to Google Gemini and Google Maps) are encrypted in transit using industry-standard <strong>Transport Layer Security (TLS/HTTPS)</strong> encryption. Furthermore, the App does not store sensitive financial details, passwords, or personal identity numbers.</p>
+
+    <h2>8. Children's Privacy (COPPA Compliance)</h2>
+    <p>Moto Care is intended for licensed motorists, vehicle owners, and automotive technicians. The App is <strong>not directed to children under the age of 13</strong> (or under 16 in the European Economic Area). We do not knowingly collect personal identifiable information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:a.qaiser77@gmail.com">a.qaiser77@gmail.com</a>, and we will promptly delete such information.</p>
+
+    <h2>9. Regional Rights (GDPR & CCPA/CPRA)</h2>
+    <p>Depending on your geographic location, you may have specific statutory rights under data protection laws such as the European General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA/CPRA):</p>
+    <ul>
+        <li><strong>Right to Access:</strong> You can request information regarding what data is collected.</li>
+        <li><strong>Right to Rectification:</strong> You can update or correct your stored vehicle information.</li>
+        <li><strong>Right to Erasure (Right to be Forgotten):</strong> You can erase all data by clearing app storage or contacting us.</li>
+        <li><strong>Right to Restrict or Object to Processing:</strong> You can revoke location, microphone, or camera permissions at any time via device settings.</li>
+        <li><strong>Non-Discrimination:</strong> We will never discriminate against you for exercising any of your privacy rights.</li>
+    </ul>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect modifications in application functionality, legal requirements, or Google Play policies. Any changes will be posted on this page with an updated "Effective Date". We encourage you to review this Privacy Policy periodically for any updates.</p>
+
+    <h2>11. Contact Information</h2>
+    <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy or your data, please contact the developer directly:</p>
+
+    <div class="contact-card">
+        <p><strong>Developer / Publisher:</strong> Moto Care Team</p>
+        <p><strong>Package Name:</strong> com.aistudio.cardiagnosis.vxbqta</p>
+        <p><strong>Support Email:</strong> <a href="mailto:a.qaiser77@gmail.com">a.qaiser77@gmail.com</a></p>
+        <p><strong>Google Play Console Developer Account:</strong> Refer to Google Play Store listing</p>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Moto Care. All rights reserved. Compliant with Google Play Developer Policies.
+    </div>
+</div>
+
+</body>
+</html>
